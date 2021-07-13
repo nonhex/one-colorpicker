@@ -21,38 +21,6 @@
         </div>
       </div>
       <div class="one-color-value">
-        <template>
-          <div class="one-type-ul one-type-hex"v-show="isHex">
-            <ul>
-              <li>
-                <input v-model="origin.hex" @change="change">
-                <p>{{ colorType.toUpperCase() }}</p>
-              </li>
-            </ul>
-          </div>
-        </template>
-        <template>
-          <div class="one-type-ul one-type-rgb" v-show="isRgb">
-            <ul>
-              <li>
-                <input v-model.number="origin.rgb.r" type="number" @change="change">
-                <p>R</p>
-              </li>
-              <li>
-                <input v-model.number="origin.rgb.g" type="number" @change="change">
-                <p>G</p>
-              </li>
-              <li>
-                <input v-model.number="origin.rgb.b" type="number" @change="change">
-                <p>B</p>
-              </li>
-              <li>
-                <input v-model.number="origin.alpha" type="number" step="0.01" @change="change">
-                <p>A</p>
-              </li>
-            </ul>
-          </div>
-        </template>
         <a href="javascript:;" class="one-color-toggle" @click="toggleMode"></a>
       </div>
       <div class="one-color-stash">
